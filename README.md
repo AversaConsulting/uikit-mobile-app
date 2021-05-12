@@ -1,11 +1,16 @@
 # uikit-mobile-app
-Extension for UIKit css for building hybrid and Cordova apps easily
+Extension for UIKit css for building hybrid and Cordova apps easily. See https://github.com/uikit/uikit for more about UIkit.
 
-https://github.com/uikit/uikit
+This will be a very simple drop in css along with samples for an iOS inspired app framework. BUT we are not
+trying to look 100% like iOS - in fact to have a recognisable app style that works for both iOS and Android users.
 
-This will be a very simple drop in css along with samples for an iOS inspired app framework
+Ideally suited to server rendered applications like e-commerce. Our experience shows that not a lot is gained from having a 
+client rendered front end and passing json data. With frameworks such as ASP.NET - it is just as quick, and MORE productive
+to render the full output on the server.
 
-- Fixed bottom toolbar with icons, captions and a choice of highlighting
+## Planned features
+
+- Fixed bottom toolbar with icons, captions and a choice of button highlighting
 - Switcher for fast navigation between tabs
 - Ajax loading of pages after initial load
 - Tweaks to exising styles to be more "mobile app" like
