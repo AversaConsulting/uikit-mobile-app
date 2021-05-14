@@ -8,7 +8,7 @@ Ideally suited to server rendered applications like e-commerce. Our experience s
 client rendered front end and passing json data. With frameworks such as ASP.NET - it is just as quick, and MORE productive
 to render the full output on the server.
 
-This is work in progress at the moment - see it as it happens at https://www.hengardirect.co.uk/test 
+This is work in progress at the moment - see it as it happens at https://www.hengardirect.co.uk/uikitapp.html
 
 You can open in Safari on iPhone and save to desktop to see a more app-like experience. There is still a LOT to do and comments welcome!
 
