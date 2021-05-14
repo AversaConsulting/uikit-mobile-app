@@ -1,0 +1,202 @@
+﻿*:not(input,textarea) {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; /* Disable selection/Copy of UIWebView */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-overflow-scrolling: touch;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+html {
+  
+}
+
+.uk-app-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: rgb(235 235 235);
+    box-shadow: rgb(0 0 0 / 6%) 0px -2px 5px;
+    min-height: 60px;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 60px;
+    height: calc(60px + (constant(safe-area-inset-bottom))*1.1);
+    height: calc(60px + (env(safe-area-inset-bottom))*1.1);
+    display: flex;
+    align-items: stretch; 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+    .uk-app-footer li {
+        display: block;
+        flex: 1 1 auto; 
+        list-style-type: none;
+        padding-top: 12px;
+        width: 60px; /*This makes the flex equally size even though stretching*/
+    }
+
+        .uk-app-footer li + li {
+            border-left: 1px solid white;
+        }
+
+
+    .uk-app-footer a {
+        font-size: 10px;
+        display: block;
+        color: gray;
+        text-decoration: none;
+        transition: color 0.25s;
+    }
+
+    .uk-app-footer .uk-active a {
+        color: #4a89dc;
+    }
+
+    .uk-app-footer a .uk-app-footer-icon {
+        display: block;
+    }
+
+    .uk-app-footer .uk-app-footer-bar {
+        background-color: #4a89dc;
+        height: 4px;
+        display: block;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+        transition: opacity 300ms;
+        opacity: 0;
+        margin-top: 6px;
+    }
+
+    .uk-app-footer .uk-active .uk-app-footer-bar {
+        opacity: 1;
+    }
+
+.uk-app-content {
+    overflow-x: hidden;
+    transition: all 300ms ease;
+    z-index: 90;
+    padding-bottom: 80px;
+    padding-bottom: calc(80px + (constant(safe-area-inset-bottom))*1.1);
+    padding-bottom: calc(80px + (env(safe-area-inset-bottom))*1.1);
+}
+
+.uk-card, .uk-card img {
+    border-radius: 20px;
+}
+
+
+
+
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-weight: 600;
+    font-family: poppins,sans-serif !important;
+    letter-spacing: -.8px;
+}
+
+.uk-h1, h1 {
+    font-size: 22px !important;
+    line-height: 22px !important;
+}
+
+
+.uk-h2, h2 {
+    font-size: 20px !important;
+    line-height: 20px !important;
+}
+
+.uk-h3, h3 {
+    font-size: 19px !important;
+    line-height: 19px !important;
+}
+
+.uk-h4, h4 {
+    font-size: 19px !important;
+    line-height: 19px !important;
+    font-weight: 400;
+}
+
+.uk-h5, h5 {
+    font-size: 18px !important;
+    line-height: 18px !important;
+}
+
+.uk-h6, h6 {
+    font-size: 18px !important;
+    line-height: 18px !important;
+    font-weight: 400;
+}
+
+
+
+.uk-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.uk-app-list li {
+    padding: 0;
+    margin: 0 !important;
+}
+
+    .uk-app-list li a {
+        display: flex;
+        text-decoration: none;
+        color: #666;
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+.uk-app-list-divider li a {
+    border-bottom: 1px solid #dadada;
+}
+
+.uk-app-list-border li a {
+    border: 1px solid #dadada;
+    border-radius: 10px;
+    margin-bottom: 10px !important;
+    padding: 15px 10px 10px 10px;
+    box-shadow: rgb(0 0 0 / 6%) 0px 2px 5px;
+}
+
+
+.uk-app-list li a:active {
+    background: #fafafa;
+}
+
+.uk-app-list-icon {
+    flex-basis: 30px;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.uk-app-list-content {
+    margin-right: 3px;
+    margin-left: 3px;
+    flex-basis: auto;
+    flex-grow: 1;
+    text-overflow: ellipsis;
+    margin-top: -2px;
+}
+
+.uk-app-list-chevron {
+    margin-left: 3px;
+    margin-right: 3px;
+    flex-basis: 30px;
+    text-align: right;
+}
+
+.uk-list > ::before {
+    content: none;
+}
